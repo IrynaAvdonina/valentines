@@ -38,7 +38,7 @@ export default function ValentinePage()
   const handleYesClick = () =>
   {
     setAccepted(true);
-    const audio = new Audio("./../public/valentines.mp3");
+    const audio = new Audio("/valentines.mp3");
     audio.loop = true;
     audio.play();
   };
@@ -76,7 +76,7 @@ export default function ValentinePage()
         {accepted ? (
           <div>
             <h1 className="love-text"> Ура! Кохаю тебе! 💖</h1>
-            <img src="./../public/happy.gif" />
+            <img src="./../happy.gif" />
           </div>
         ) : (
           <div>
@@ -84,7 +84,7 @@ export default function ValentinePage()
             {noClicked === 0 ? (
               <div className="heart-shape">
                 <img
-                  src="./../public/happy.gif"
+                  src="./assets/happy.gif"
                   alt="cute cat"
                   className="gif"
                 />
