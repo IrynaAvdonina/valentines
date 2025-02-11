@@ -1,6 +1,6 @@
 import { useState, useEffect, MouseEvent } from "react";
 import "./App.css";
-
+import happyGif from './../public/happy.gif';
 function ValentineBackground({ type }: { type: "hearts" | "gradient" })
 {
   useEffect(() =>
@@ -76,7 +76,7 @@ export default function ValentinePage()
         {accepted ? (
           <div>
             <h1 className="love-text"> Ура! Кохаю тебе! 💖</h1>
-            <img src="/happy.gif" />
+            <img src={happyGif} />
           </div>
         ) : (
           <div>
