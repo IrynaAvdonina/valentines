@@ -76,7 +76,7 @@ export default function ValentinePage()
         {accepted ? (
           <div>
             <h1 className="love-text"> Ура! Кохаю тебе! 💖</h1>
-            <img src="/src/assets/happy.gif" />
+            <img src="./assets/happy.gif" />
           </div>
         ) : (
           <div>
@@ -84,7 +84,7 @@ export default function ValentinePage()
             {noClicked === 0 ? (
               <div className="heart-shape">
                 <img
-                  src="/src/assets/shy.gif"
+                  src='./assets/shy.gif'
                   alt="cute cat"
                   className="gif"
                 />
