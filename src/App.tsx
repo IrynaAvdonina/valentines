@@ -1,6 +1,9 @@
 import { useState, useEffect, MouseEvent } from "react";
 import "./App.css";
 import happyGif from './../public/happy.gif';
+import audioUrl from './../public/valentines.mp3';
+import shyGif from './../public/shy.gif';
+import sadImg from './../public/sad.jpg';
 function ValentineBackground({ type }: { type: "hearts" | "gradient" })
 {
   useEffect(() =>
@@ -38,7 +41,7 @@ export default function ValentinePage()
   const handleYesClick = () =>
   {
     setAccepted(true);
-    const audio = new Audio("/valentines.mp3");
+    const audio = new Audio(audioUrl);
     audio.loop = true;
     audio.play();
   };
@@ -84,13 +87,13 @@ export default function ValentinePage()
             {noClicked === 0 ? (
               <div className="heart-shape">
                 <img
-                  src="/shy.gif"
+                  src={shyGif}
                   alt="cute cat"
                   className="gif"
                 />
               </div>) : (
               <img
-                src="/sad.jpg"
+                src={sadImg}
                 alt="sad cat"
                 width={"240px"}
                 height={"240px"}
