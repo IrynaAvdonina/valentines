@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'SlimamifMedium';
-  src: url('./assets/SlimamifMedium.ttf') format('opentype');
+  src: url('./../public/SlimamifMedium.ttf') format('opentype');
 }
 
 body {
@@ -26,7 +26,7 @@ body {
 }
 
 .heart-shape {
-  mask: url('./assets/heart-shape.png') center no-repeat;
+  mask: url('./../public/heart-shape.png') center no-repeat;
   width: 240px;
   height: 240px;
   mask-size: contain;

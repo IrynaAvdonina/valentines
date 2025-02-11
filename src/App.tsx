@@ -84,7 +84,7 @@ export default function ValentinePage()
             {noClicked === 0 ? (
               <div className="heart-shape">
                 <img
-                  src='./../public/shy.gif'
+                  src="./../public/happy.gif"
                   alt="cute cat"
                   className="gif"
                 />
