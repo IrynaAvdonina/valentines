@@ -22,6 +22,7 @@ body {
   font-size: 4rem;
   color: #e63946;
   margin-bottom: 2rem;
+  text-wrap: balance;
 }
 
 .heart-shape {
