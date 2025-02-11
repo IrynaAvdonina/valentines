@@ -114,7 +114,7 @@ body {
 }
 
 .gradient {
-  background: url('./assets/gradient.jpg');
+  background: url('./../public/gradient.jpg');
   background-size: 150% 250%;
   opacity: 0.5;
   animation: gradientMove 8s ease infinite;
