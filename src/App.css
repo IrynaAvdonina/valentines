@@ -25,6 +25,10 @@ body {
   text-wrap: balance;
 }
 
+.love-text {
+  margin-top: 10px;
+}
+
 .heart-shape {
   mask: url('./../public/heart-shape.png') center no-repeat;
   width: 240px;
@@ -132,4 +136,18 @@ body {
   100% {
     background-position: 0% 50%;
   }
+}
+
+.photos {
+  position: relative;
+}
+
+.photo {
+  position: absolute;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+  top: 0;
+  left: 0;
 }
